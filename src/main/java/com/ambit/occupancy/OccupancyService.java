@@ -1,12 +1,15 @@
 package com.ambit.occupancy;
 
 
+import org.springframework.stereotype.Service;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
 import static java.util.stream.Collectors.summarizingInt;
 
+@Service
 public class OccupancyService {
 
     public UsagePair calculateUsage(long premiumCount, long economyCount, List<Integer> customers) {
